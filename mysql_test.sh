@@ -12,3 +12,4 @@ if [ -f "$FILE_DB" ]; then
 else
     echo "$FILE_DB not found"
 fi
+# test
