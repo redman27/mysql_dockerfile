@@ -1,3 +1,4 @@
+sleep 10
 FILE=/var/run/mysqld/mysqld.pid
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
