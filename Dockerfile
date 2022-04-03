@@ -7,3 +7,5 @@ ENV MYSQL_DATABASE db
 # executed during container startup
 #ADD https://raw.githubusercontent.com/redman27/wiki/main/otpotpot_wiki.sql /tmp
 COPY ./otpotpot_wiki.sql /docker-entrypoint-initdb.d/
+COPY ./mysql_test.sh /
+RUN chmod 777 /mysql_test.sh
